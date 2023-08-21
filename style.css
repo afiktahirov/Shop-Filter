@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: teal;
+}
+header {
+  height: 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  background-color: #feca57;
+  font-weight: bold;
+  z-index: 2;
+}
+.products {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.product {
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+.product img {
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+}
+.operations {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+button {
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.sell {
+  background-color: #fd1014;
+  color: #fff;
+}
+.buy {
+  background-color: rgb(37, 204, 37);
+  color: #fff;
+}
+button:disabled {
+  filter: grayscale(100%) blur(2px);
+  cursor: not-allowed;
+}
+#reciept {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #fff;
+  font-size: 20px;
+}
+.search {
+  margin-top: 70px;
+  text-align: center;
+}
